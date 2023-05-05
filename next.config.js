@@ -1,9 +1,5 @@
 module.exports = {
-  exportPathMap: function() {
-    return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      // add more pages as needed
-    };
-  }
-};
+  images: {
+    domains: ['example.com'],
+  },
+}

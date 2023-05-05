@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
-
-module.exports = nextConfig
+module.exports = {
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      // add more pages as needed
+    };
+  }
+};
